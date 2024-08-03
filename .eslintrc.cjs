@@ -23,6 +23,7 @@ module.exports = {
     'max-len': ['warn', {'code': 120}],
     'semi': ['warn', 'always'],
     'object-curly-spacing': ['error', 'never'],
-    'array-bracket-spacing': ['error', 'never']
+    'array-bracket-spacing': ['error', 'never'],
+    'react/prop-types': 0 
   },
 }

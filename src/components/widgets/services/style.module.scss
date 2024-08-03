@@ -1,0 +1,23 @@
+.wrapper {
+  padding: 80px 90px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.title {
+  font-family: "Stem-Bold";
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #FF5545;
+  margin-bottom: 80px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(2, 500px);
+  gap: 80px 20px;
+}
