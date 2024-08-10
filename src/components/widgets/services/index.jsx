@@ -4,7 +4,7 @@ import servicesData from './consts';
 
 const Services = () => {
   return (
-    <div className={s.wrapper}>
+    <div className={s.wrapper} id="services">
       <p className={s.title}>{'Юридические услуги'}</p>
       <div className={s.container}>
         {

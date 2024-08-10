@@ -1,0 +1,35 @@
+.wrapper{
+  margin-top: 48px;
+}
+
+.slider{
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+}
+
+.sliderWrapper{
+  
+}
+
+.img{
+  border-radius: 24px;
+  width: 540px;
+  height: 810px;
+}
+
+.arrowRight{
+  cursor: pointer;
+  
+}
+
+.arrowLeft{
+  cursor: pointer;
+  img{
+    transform: rotate(180deg);
+  }
+}
+
+.hidden{
+  overflow: hidden;
+}
