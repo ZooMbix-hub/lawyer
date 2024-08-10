@@ -9,7 +9,7 @@ const Header = () => {
           <p>{'Вагапов Р. Р.'}</p>
         </div>
         <a href="#services">
-          <button  className={s.btn}>
+          <button className={s.btn}>
             {'Узнать подробности'}
           </button>
         </a>
