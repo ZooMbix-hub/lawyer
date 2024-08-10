@@ -1,6 +1,5 @@
 import s from './style.module.scss';
 import icons from '../../../icons';
-import Img from '../../../image/bg-card1.jpg';
 
 const ServiceItem = ({title, descriptions, iconName}) => {
   const Icon = icons[iconName];

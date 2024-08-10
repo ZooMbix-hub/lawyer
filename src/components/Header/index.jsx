@@ -5,11 +5,14 @@ const Header = () => {
     <div className={s.header}>
       <div className={s.container}>
         <div className={s.text}>
-          <p>Адвокат <br /> Вагапов Р. Р.</p>
+          <p>{'Адвокат'}</p>
+          <p>{'Вагапов Р. Р.'}</p>
         </div>
-        <div className={s.headerButton}>
-          <button  className={s.btn}><a href="#services">Узнать подробности</a></button>
-        </div>
+        <a href="#services">
+          <button  className={s.btn}>
+            {'Узнать подробности'}
+          </button>
+        </a>
       </div>
     </div>
   );

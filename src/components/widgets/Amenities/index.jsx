@@ -2,7 +2,7 @@ import s from './style.module.scss';
 import ServiceItem from './ServiceItem';
 import servicesData from './consts';
 
-const Services = () => {
+const Amenities = () => {
   return (
     <div className={s.wrapper} id="services">
       <p className={s.title}>{'Юридические услуги'}</p>
@@ -22,4 +22,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Amenities;

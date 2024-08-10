@@ -1,4 +1,4 @@
-import {Services} from '../../components';
+import {Amenities} from '../../components/widgets';
 import Navbar from '../../components/navbar/Navbar';
 import Header from '../../components/Header';
 import Form from '../../components/Form';
@@ -10,10 +10,9 @@ import s from './style.module.scss';
 const MainPage = () => {
   return (
     <div>
-      MainPage
       <Navbar />
       <Header />
-      <Services />
+      <Amenities />
       <Form />
       <SliderBlock />
       <Footer />
