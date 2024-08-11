@@ -5,9 +5,7 @@ const SliderBlock = () =>{
   return (
     <div className={s.sliderBlock} id='certificate'>
       <div className={s.container}>
-        <div className={s.title}>
-          <p>Опыт работы более 10 лет</p>
-        </div>
+        <p className={s.title}>{'Опыт работы более 10 лет'}</p>
         <SliderItem />
       </div>
     </div>

@@ -1,14 +1,14 @@
 import ArrowIcon from '../../icons/ArrowIcon';
 import s from './style.module.scss';
 
-import Certificate1 from '../../image/certificate1.jpg';
-import Certificate2 from '../../image/certificate2.jpg';
-import Certificate3 from '../../image/certificate3.jpg';
-import Certificate4 from '../../image/certificate4.jpg';
-import Certificate5 from '../../image/certificate5.jpg';
-import Certificate6 from '../../image/certificate6.jpg';
-import Certificate7 from '../../image/certificate7.jpg';
-import Certificate8 from '../../image/certificate8.jpg';
+import Certificate1 from '../../image/certificates/certificate1.jpg';
+import Certificate2 from '../../image/certificates/certificate2.jpg';
+import Certificate3 from '../../image/certificates/certificate3.jpg';
+import Certificate4 from '../../image/certificates/certificate4.jpg';
+import Certificate5 from '../../image/certificates/certificate5.jpg';
+import Certificate6 from '../../image/certificates/certificate6.jpg';
+import Certificate7 from '../../image/certificates/certificate7.jpg';
+import Certificate8 from '../../image/certificates/certificate8.jpg';
 
 const SliderItem = () => {
   return (

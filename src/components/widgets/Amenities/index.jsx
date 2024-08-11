@@ -1,6 +1,6 @@
 import s from './style.module.scss';
-import ServiceItem from './ServiceItem';
-import servicesData from './consts';
+import AmenitiesItem from './AmenitiesItem';
+import servicesData from './servicesData';
 
 const Amenities = () => {
   return (
@@ -9,7 +9,7 @@ const Amenities = () => {
       <div className={s.container}>
         {
           servicesData.map((item) => (
-            <ServiceItem 
+            <AmenitiesItem 
               key={item.id} 
               title={item.title} 
               descriptions={item.descriptions}
