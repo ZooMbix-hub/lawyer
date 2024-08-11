@@ -3,6 +3,7 @@ export default [
     id: 'adminMatters',
     title: 'Административные дела',
     iconName: 'ScalesIcon',
+    imageName: 'bg-amenities-item-1',
     descriptions: [
       {
         id: 0,
@@ -30,6 +31,7 @@ export default [
     id: 'criminalCases',
     title: 'Уголовные дела',
     iconName: 'HandcuffsIcon',
+    imageName: 'bg-amenities-item-2',
     descriptions: [
       {
         id: 0,
