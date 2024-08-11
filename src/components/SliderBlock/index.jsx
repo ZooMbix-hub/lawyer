@@ -3,7 +3,7 @@ import SliderItem from './SliderItem/Slider';
 
 const SliderBlock = () =>{
   return (
-    <div className={s.sliderBlock}>
+    <div className={s.sliderBlock} id='certificate'>
       <div className={s.container}>
         <div className={s.title}>
           <p>Опыт работы более 10 лет</p>

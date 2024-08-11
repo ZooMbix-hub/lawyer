@@ -10,7 +10,7 @@ const Footer = () => (
           height="400" 
         />
       </div>
-      <div className={s.contacts}>
+      <div className={s.contacts} id='contacts'>
         <h1>{'Контакты'}</h1>
         <div className={s.grid}>
           <div className={s.gridItem}>

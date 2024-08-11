@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className={s.rightText}>
           <ul>
             <li><a href="#services">Услуги</a></li>
-            <li><a href="#">Сертификаты</a></li>
+            <li><a href="#certificate">Сертификаты</a></li>
             <li><a href="#contacts">Контакты</a></li>
           </ul>
           <div className={s.contactsBlock}>
