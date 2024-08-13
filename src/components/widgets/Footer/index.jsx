@@ -3,11 +3,10 @@ import s from './style.module.scss';
 const Footer = () => (
   <div className={s.wrapper}>
     <div className={s.flexbox}>
-      <div className={s.maps}>
+      <div >
         <iframe 
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Acd30a3d503d28afb7909e5db0fd57a1476a49972a24ed17b102409c12ee64b03&amp;source=constructor" 
-          width="705" 
-          height="400" 
+          className={s.maps}
         />
       </div>
       <div className={s.contacts} id='contacts'>
@@ -19,12 +18,12 @@ const Footer = () => (
           </div>
           <div className={s.gridItem}>
             <h3>{'Рабочий телефон'}</h3>
-            <p>{'+7 904 453-95-58'}</p>
-            <p>{'+7 958 166-31-76'}</p>
+            <p><a href="tel:79044539558">{'+7 904 453-95-58'}</a></p>
+            <p><a href="tel:79581663176">{'+7 958 166-31-76'}</a></p>
           </div>
           <div className={s.gridItem}>
             <h3>{'Почта'}</h3>
-            <p className={s.accent}>{'socrat-89@yandex.ru'}</p>
+            <p className={s.accent}><a href="mailto:socrat-89@yandex.ru">{'socrat-89@yandex.ru'}</a></p>
           </div>
           <div className={s.gridItem}>
             <h3>{'Адрес'}</h3>

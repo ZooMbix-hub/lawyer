@@ -9,5 +9,5 @@ export {
   Header,
   Form,
   Footer,
-  Navbar
+  Navbar,
 };

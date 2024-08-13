@@ -23,6 +23,7 @@
 .info {
   display: flex;
   gap: 40px;
+  align-items: center;
 }
 
 .navbar {
@@ -32,6 +33,7 @@
   display: flex;
   align-items: center;
   gap: 24px;
+  height: 15px;
 }
 
 .navItem {
@@ -54,4 +56,50 @@
   flex-direction: column;
   align-items: center;
   line-height: 20px;
+}
+
+a[services] {
+  padding-top: 75px;
+  margin-top: -75px;
+  display: inline-block; /* required for webkit browsers */
+}
+
+@media screen and (max-width: 992px){
+  .content {
+    padding: 10px 35px;
+  }
+  
+}
+@media screen and (max-width: 1100px){
+  .logo{
+    font-size: 28px;
+  }
+  .navbar{
+    font-size: 16px;
+  }
+  .workTime{
+    font-size: 12px;
+  }
+  .phones{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 670px){
+  .contact{
+    display: none;
+  }
+}
+@media screen and (max-width: 470px){
+  .wrapper{
+    height: 166px;
+  }
+  .info{
+    margin-top: 16px;
+  }
+  .content{
+    flex-direction: column;
+  }
+  .navbar{
+    flex-direction: column;
+  }
 }

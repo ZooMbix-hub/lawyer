@@ -21,7 +21,7 @@ const ServiceItem = ({title, descriptions, iconName}) => {
           }
         </ul>
       </div>
-      <button className={s.ticketBtn}>{'Оставить заявку'}</button>
+      <a href="#contacts"><button className={s.ticketBtn}>{'Оставить заявку'}</button></a>
     </div>
   );
 };

@@ -1,18 +1,17 @@
 .wrapper{
   background-color: #F7F8FA;
-  height: 400px;
+
 }
 
 .flexbox{
   display: flex;
-  justify-content: center;
 }
 
-.maps{
-}
+
 
 .contacts{
   margin: 24px 96px 0px 82px;
+  position: relative;
   h1{
     font-family: "Stem-Bold";
     font-size: 32px;
@@ -21,12 +20,16 @@
   }
 }
 
+.maps{
+  width: 705px;
+  height: 405px;
+}
+
 .grid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 14px 88px;
-  margin-bottom: 137px;
 }
 
 .gridItem{
@@ -50,7 +53,124 @@
   font-size: 14px;
   color: #4B4B4B;
   letter-spacing: 0.6px;
+  position: absolute;
+  bottom: 0;
   a{
     text-decoration-line: underline;
   }
 }
+
+@media screen and (max-width:1470px){
+  .grid{
+    gap: 14px 30px;
+  }
+  .contacts{
+    margin: 24px 20px 0 40px;
+  }
+}
+
+@media screen and (max-width:1100px){
+  .maps{
+    width: 490px;
+    height: 280px;
+  }
+  .contacts{
+    h1{
+      font-size: 26px;
+    }
+  }
+  .gridItem{
+    h3{
+      font-size: 16px;
+      line-height: 14px;
+    }
+    p{
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+  .ap{
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .maps{
+    width: 410px;
+    height: 260px;
+  }
+}
+@media screen and (max-width: 815px){
+  .grid{
+    gap: 0 20px;
+  }
+}
+@media screen and (max-width: 775px){
+  .grid{
+    gap: 10px 10px;
+  }
+  .contacts{
+    margin: 18px 18px 0 20px;
+    h1{
+      font-size: 24px;
+    }
+  }
+  .gridItem{
+    h3{
+      font-size: 14px;
+      line-height: 12px;
+    }
+    p{
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+  .ap{
+    font-size: 8px;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 730px){
+  .maps{
+    width: 350px;
+    height: 260px;
+  }
+}
+@media screen and (max-width: 610px){
+  .maps{
+    width: 300px;
+    height: 370px;
+  }
+  .grid{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .contacts{
+    margin: 15px 12px 0 15px;
+    h1{
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 470px){
+  .maps{
+    display: none;
+  }
+  .flexbox{
+    justify-content: center;
+  }
+  .contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 260px;
+  }
+  .ap{
+    position: relative;
+    padding: 20px 6px 5px 6px;
+  }
+}
+

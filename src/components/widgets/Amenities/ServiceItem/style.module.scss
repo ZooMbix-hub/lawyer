@@ -8,32 +8,32 @@
   border-radius: 16px;
   z-index: 1;
   &:nth-child(1){
-    background-image: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url("../../../image/bg-card1.jpg");
+    background-image: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url("../../../image/bg-amenities-item-1.jpg");
     background-size: cover;
     background-position: 30%;
   }
   &:nth-child(2){
-    background-image: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url("../../../image/bg-card2.jpg");
+    background-image: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url("../../../image/bg-amenities-item-2.jpg");
     background-size: cover;
     background-position: 36%;
   }
   &:nth-child(3){
-    background-image: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url("../../../image/bg-card3.png");
+    background-image: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url("../../../image/bg-amenities-item-3.png");
     background-size: cover;
     background-position: 46%;
   }
   &:nth-child(4){
-    background-image: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url("../../../image/bg-card4.png");
+    background-image: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url("../../../image/bg-amenities-item-4.png");
     background-size: cover;
     background-position: 41%;
   }
   &:nth-child(5){
-    background-image: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url("../../../image/bg-card5.png");
+    background-image: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url("../../../image/bg-amenities-item-5.png");
     background-size: cover;
     background-position: 30%;
   }
   &:nth-child(6){
-    background-image: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url("../../../image/bg-card6.png");
+    background-image: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)), url("../../../image/bg-amenities-item-6.png");
     background-size: cover;
     background-position: 48%;
   }
@@ -95,6 +95,19 @@
   transition: 0.2s;
 
   &:hover {
-    background-color: #ae382e;
+    background-color: #d64133;
+  }
+}
+
+@media screen and (max-width: 1100px){
+
+  .title{
+    font-size: 28px;
+  }
+  .titleService{
+    font-size: 19px;
+  }
+  .description{
+    font-size: 15px;
   }
 }

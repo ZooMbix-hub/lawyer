@@ -1,5 +1,4 @@
 import {Amenities, Header, Form, Footer, Navbar} from '../../components/widgets';
-import SliderBlock from '../../components/SliderBlock';
 
 import s from './style.module.scss';
 
@@ -10,7 +9,6 @@ const MainPage = () => {
       <Header />
       <Amenities />
       <Form />
-      <SliderBlock />
       <Footer />
     </div>
   );
