@@ -1,7 +1,7 @@
 import s from './style.module.scss';
 import icons from '../../../icons';
 
-const ServiceItem = ({title, descriptions, iconName}) => {
+const AmenitiesItem = ({title, descriptions, iconName}) => {
   const Icon = icons[iconName];
 
   return (
@@ -26,4 +26,4 @@ const ServiceItem = ({title, descriptions, iconName}) => {
   );
 };
 
-export default ServiceItem;
+export default AmenitiesItem;
