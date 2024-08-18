@@ -2,8 +2,6 @@ import s from './style.module.scss';
 
 const Navbar = () => (
   <>
-
-
     <div className={s.wrapper}>
       <div className={s.content}>
         <p className={s.logo}>
@@ -15,7 +13,7 @@ const Navbar = () => (
               <a href="#services">{'Услуги'}</a>
             </li>
             <li className={s.navItem}>
-              <a href="#sertificate">{'Сертификаты'}</a>
+              <a href="#certificates">{'Сертификаты'}</a>
             </li>
             <li className={s.navItem}>
               <a href="#contacts">{'Контакты'}</a>

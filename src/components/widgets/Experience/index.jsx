@@ -11,9 +11,9 @@ import s from './style.module.scss';
 
 const Experience = () => {
   return (
-    <div className={s.wrapper}>
+    <div className={s.wrapper} id='certificates'>
       <p className={s.title}>{'Опыт работы более 10 лет'}</p>
-      <Carousel>
+      <Carousel countImages={6}>
         <img className={s.image} src={certificate1} />
         <img className={s.image} src={certificate2} />
         <img className={s.image} src={certificate3} />
