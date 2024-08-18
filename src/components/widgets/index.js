@@ -5,6 +5,7 @@ import Experience from './Experience';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import Authentication from './Authentication';
+import FieldsPanel from './FieldsPanel';
 
 export {
   Amenities,
@@ -13,5 +14,6 @@ export {
   Footer,
   Navbar,
   Experience,
-  Authentication
+  Authentication,
+  FieldsPanel
 };
