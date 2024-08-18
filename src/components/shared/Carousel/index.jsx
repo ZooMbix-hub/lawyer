@@ -14,8 +14,6 @@ const Carousel = ({children, countImages}) => {
     setOffset((currentOffset) => {
       const newOffset = currentOffset + PAGE_WIDTH;
 
-      console.log(Math.min(newOffset, 0));
-
       return Math.min(newOffset, 0);
     });
 
@@ -29,8 +27,6 @@ const Carousel = ({children, countImages}) => {
       const newOffset = currentOffset - PAGE_WIDTH;
 
       const maxOffset = -(PAGE_WIDTH * (images.length - 1));
-
-      console.log(Math.max(newOffset, maxOffset));
 
       return Math.max(newOffset, maxOffset);
     });
@@ -60,6 +56,7 @@ const Carousel = ({children, countImages}) => {
         <button 
           className={s.btnArrow} 
           onClick={() => handlerLeftArrowCLick()}
+          disabled={currentImage === 1}
         >
           <ArrowIcon />
         </button>
@@ -74,6 +71,7 @@ const Carousel = ({children, countImages}) => {
         <button 
           className={s.btnArrow} 
           onClick={() => handlerRightArrowCLick()}
+          disabled={currentImage === countImages}
         >
           <ArrowIcon />
         </button>
