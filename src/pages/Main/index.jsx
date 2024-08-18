@@ -1,5 +1,4 @@
-import {Amenities, Header, Form, Footer, Navbar} from '../../components/widgets';
-
+import {Amenities, Header, Form, Footer, Navbar, Experience} from '../../components/widgets';
 import s from './style.module.scss';
 
 const MainPage = () => {
@@ -9,6 +8,7 @@ const MainPage = () => {
       <Header />
       <Amenities />
       <Form />
+      <Experience />
       <Footer />
     </div>
   );
