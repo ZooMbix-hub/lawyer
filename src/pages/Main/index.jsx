@@ -1,4 +1,4 @@
-import {Amenities, Header, Form, Footer, Navbar, Experience} from '../../components/widgets';
+import {Amenities, Header, Form, Footer, Navbar, Experience} from '@widgets';
 import s from './style.module.scss';
 
 const MainPage = () => {

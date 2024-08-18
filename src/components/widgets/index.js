@@ -4,6 +4,7 @@ import Form from './Form';
 import Experience from './Experience';
 import Footer from './Footer';
 import Navbar from './Navbar';
+import Authentication from './Authentication';
 
 export {
   Amenities,
@@ -11,5 +12,6 @@ export {
   Form,
   Footer,
   Navbar,
-  Experience
+  Experience,
+  Authentication
 };
