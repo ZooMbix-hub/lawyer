@@ -20,10 +20,10 @@ const Form = () => {
               <p>Проведу вам экспертную консультацию, вникну в суть вашей проблемы и подготовлю оптимальное решение поставленной задачи</p>
             </div>
             <form className={s.flexForm}>
-              <input type="text"  placeholder='Ваше имя' maxLength="45" onKeyDown={noDigits}/>
-              <input type="number" inputMode="tel" placeholder='+7 (000) 000-0000' maxLength="11"/>
-              <input type="email"  inputMode="email" placeholder='E-mail' />
-              <input type='submit' value="Отправить заявку" className={s.btn} />
+              <input type="text"  className={s.inputForm}  placeholder='Ваше имя' maxLength="45" onKeyDown={noDigits}/>
+              <input type="number" className={s.inputForm} inputMode="tel" placeholder='+7 (000) 000-0000' maxLength="11"/>
+              <input type="email" className={s.inputForm}  inputMode="email" placeholder='E-mail' />
+              <input type='submit' className={s.inputForm} value="Отправить заявку" className={s.btn} />
               <textarea type="text" placeholder='Напишите тему заявки и опишите суть проблемы' className={s.formText}/>
             </form>        
           </div>

@@ -127,7 +127,7 @@ const FieldsPanel = () => {
             className={s.textField} 
           />
         </div>
-        <button onClick={saveData}>{'Сохранить'}</button>
+        <button className={s.btnSave} onClick={saveData}>{'Сохранить'}</button>
       </div>
     </div>
   );
