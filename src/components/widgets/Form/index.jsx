@@ -37,6 +37,7 @@ const Form = () => {
         setEmail('');
         setMessage('');
         setNumber('');
+        alert("Заявка успешно отправленна!")
       })
       .catch((error) => {
         console.log('Error sending email:', error);
