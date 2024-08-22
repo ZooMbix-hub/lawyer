@@ -43,8 +43,7 @@ const Form = () => {
       });
   };
   
-  return (
-    
+  return ( 
     <>
       <div className={s.form}>
         <div className={s.container}>
