@@ -1,10 +1,6 @@
-import {useContext} from 'react';
-import {AppContext} from '@app/AppStore';
 import s from './style.module.scss';
 
 const Navbar = () => {
-  const {workTime, numberPhone} = useContext(AppContext);
-
   return (
     <>
       <div className={s.wrapper}>
@@ -25,15 +21,14 @@ const Navbar = () => {
               </li>
             </ul>
             <div className={s.contact}>
-              <p className={s.workTime}>{`Время работы с ${workTime.from} до ${workTime.to}`}</p>
+              <p className={s.workTime}>{'Время работы с 8:00 до 18:00'}</p>
               <div className={s.phones}>
-                {
-                  numberPhone.map((item, i) => (
-                    <a key={i} href={`tel:${item.replace(/[- .]/g, "")}`}>
-                      {item}
-                    </a>
-                  ))
-                }
+                <a href={'tel:79044539558'}>
+                  {'+7 904 453-95-58'}
+                </a>
+                <a href={'tel:79044539558'}>
+                  {'+7 958 166-31-76'}
+                </a>
               </div>
             </div>
           </div>

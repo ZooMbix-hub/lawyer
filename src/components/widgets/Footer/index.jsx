@@ -1,10 +1,6 @@
-import {useContext} from 'react';
-import {AppContext} from '@app/AppStore';
 import s from './style.module.scss';
 
 const Footer = () => {
-  const {workTime, numberPhone, email, address} = useContext(AppContext);
-
   return (
     <div className={s.wrapper}>
       <div className={s.flexbox}>
@@ -20,28 +16,29 @@ const Footer = () => {
             <div className={s.grid}>
               <div className={s.gridItem}>
                 <h3>{'График работы'}</h3>
-                <p>{`пн-сб: с ${workTime.from} до ${workTime.to}`}</p>
+                <p>{'пн-сб: с 8:00 до 18:00}'}</p>
               </div>
               <div className={s.gridItem}>
                 <h3>{'Рабочий телефон'}</h3>
-                {
-                  numberPhone.map((item, i) => (
-                    <p key={i} >
-                      <a href={`tel:${item.replace(/[- .]/g, '')}`}>
-                        {item}
-                      </a>
-                    </p>
-                  ))
-                }
+                <p>
+                  <a href={'tel:79044539558'}>
+                    {'+7 904 453-95-58'}
+                  </a>
+                </p>
+                <p>
+                  <a href={'tel:79581663176'}>
+                    {'+7 958 166-31-76'}
+                  </a>
+                </p>
               </div>
               <div className={s.gridItem}>
                 <h3>{'Почта'}</h3>
-                <p className={s.accent}><a href={`mailto:${email}`}>{email}</a></p>
+                <p className={s.accent}><a href={'mailto:socrat-89@yandex.ru'}>{'socrat-89@yandex.ru'}</a></p>
               </div>
               <div className={s.gridItem}>
                 <h3>{'Адрес'}</h3>
-                <p>{`${address.index} г. ${address.city},`}</p>
-                <p>{`ул. ${address.street}`}</p>
+                <p>{'629000 г. Салехард,'}</p>
+                <p>{'ул. Свердлова, дом 22, офис 214'}</p>
               </div>
             </div>
           </div>
