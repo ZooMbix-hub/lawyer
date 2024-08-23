@@ -1,14 +1,25 @@
 import {useState, useEffect, Children, cloneElement} from 'react';
 
 import ArrowIcon from '../../icons/ArrowIcon';
+import {useMatchMedia} from '../../shared/hooks/useMatchMedia';
 import s from './style.module.scss';
-
-const PAGE_WIDTH = 450;
 
 const Carousel = ({children, countImages}) => {
   const [images, setImages] = useState([]);
   const [offset, setOffset] = useState(0);
   const [currentImage, setCurrentImage] = useState(1);
+  const {isMobile, isTablet, isDesktop} = useMatchMedia();
+  let PAGE_WIDTH = 450;
+
+  if (isMobile) {
+    PAGE_WIDTH = 270;
+  }
+
+  if (isTablet) {
+    PAGE_WIDTH = 300;
+  }
+
+  console.log(isMobile, isTablet, isDesktop);
 
   const handlerLeftArrowCLick = () => {
     setOffset((currentOffset) => {

@@ -23,16 +23,15 @@
   transition-property: transform;
   transition-duration: 300ms;
   transition-timing-function: ease-in-out;
-
-  /* убрать */
-  div {
-    background-color: red;
-  }
 }
 
 .btnArrow {
   align-self: center;
   background-color: transparent;
+  
+  &:disabled {
+    opacity: 0.3;
+  }
 
   &:first-child {
     rotate: calc(180deg);
@@ -45,10 +44,30 @@
   margin-top: 30px;
 }
 
-@media screen and ( max-width: 640px){
+@media (min-width: 460px) and (max-width: 650px){
   .btnArrow{
     svg{
       height: 65px;
     }
+  }
+
+  .container {
+    width: 460px;
+  }
+}
+
+@media (max-width: 460px){
+  .btnArrow{
+    svg{
+      width: 30px;
+    }
+  }
+
+  .window {
+    margin: 0px 10px;
+  }
+
+  .container {
+    width: 350px;
   }
 }

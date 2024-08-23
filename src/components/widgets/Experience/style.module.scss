@@ -12,7 +12,18 @@
 }
 
 .image {
-  width: 450px;
-  height: 600px;
   border-radius: 20px;
+}
+
+@media screen and (max-width: 1100px){
+  .title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 460px){
+  .wrapper {
+    padding: 30px 0px;
+  }
 }
