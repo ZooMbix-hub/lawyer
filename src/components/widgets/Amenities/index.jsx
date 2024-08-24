@@ -1,6 +1,6 @@
-import s from './style.module.scss';
 import AmenitiesItem from './AmenitiesItem';
 import servicesData from './servicesData';
+import s from './style.module.scss';
 
 const Amenities = () => {
   return (
@@ -9,9 +9,9 @@ const Amenities = () => {
       <div className={s.container}>
         {
           servicesData.map((item) => (
-            <AmenitiesItem 
-              key={item.id} 
-              title={item.title} 
+            <AmenitiesItem
+              key={item.id}
+              title={item.title}
               descriptions={item.descriptions}
               iconName={item.iconName}
             />

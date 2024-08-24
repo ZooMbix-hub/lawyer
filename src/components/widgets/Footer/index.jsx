@@ -5,8 +5,8 @@ const Footer = () => {
     <div className={s.wrapper}>
       <div className={s.flexbox}>
         <div >
-          <iframe 
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3Acd30a3d503d28afb7909e5db0fd57a1476a49972a24ed17b102409c12ee64b03&amp;source=constructor" 
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Acd30a3d503d28afb7909e5db0fd57a1476a49972a24ed17b102409c12ee64b03&amp;source=constructor"
             className={s.maps}
           />
         </div>

@@ -1,5 +1,5 @@
-import s from './style.module.scss';
 import icons from '../../../icons';
+import s from './style.module.scss';
 
 const AmenitiesItem = ({title, descriptions, iconName}) => {
   const Icon = icons[iconName];
