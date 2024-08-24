@@ -8,7 +8,7 @@ const Carousel = ({children, countImages}) => {
   const [images, setImages] = useState([]);
   const [offset, setOffset] = useState(0);
   const [currentImage, setCurrentImage] = useState(1);
-  const {isMobile, isTablet, isDesktop} = useMatchMedia();
+  const {isMobile, isTablet} = useMatchMedia();
   let PAGE_WIDTH = 450;
 
   if (isMobile) {
@@ -18,8 +18,6 @@ const Carousel = ({children, countImages}) => {
   if (isTablet) {
     PAGE_WIDTH = 300;
   }
-
-  console.log(isMobile, isTablet, isDesktop);
 
   const handlerLeftArrowCLick = () => {
     setOffset((currentOffset) => {
@@ -64,23 +62,23 @@ const Carousel = ({children, countImages}) => {
   return (
     <div className={s.wrapper}>
       <div className={s.container}>
-        <button 
-          className={s.btnArrow} 
+        <button
+          className={s.btnArrow}
           onClick={() => handlerLeftArrowCLick()}
           disabled={currentImage === 1}
         >
           <ArrowIcon />
         </button>
         <div className={s.window}>
-          <div 
+          <div
             className={s.itemsContainer}
             style={{transform: `translateX(${offset}px)`}}
           >
             {images}
           </div>
         </div>
-        <button 
-          className={s.btnArrow} 
+        <button
+          className={s.btnArrow}
           onClick={() => handlerRightArrowCLick()}
           disabled={currentImage === countImages}
         >
