@@ -63,6 +63,11 @@ a[services] {
   display: inline-block; /* required for webkit browsers */
 }
 
+.navLogo{
+  width: 80px;
+  height: 80px;
+}
+
 @media screen and (max-width: 992px){
   .content {
     padding: 10px 35px;
@@ -90,7 +95,7 @@ a[services] {
 }
 @media screen and (max-width: 470px){
   .wrapper{
-    height: 166px;
+    height: 222px;
   }
   .info{
     margin-top: 16px;

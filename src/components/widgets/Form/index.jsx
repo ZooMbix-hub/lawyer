@@ -38,7 +38,7 @@ const Form = () => {
   };
 
   return (
-    <div className={s.form}>
+    <div className={s.form} id='form'>
       <div className={s.container}>
         <div className={s.block}>
           <div className={s.title}>
@@ -55,7 +55,6 @@ const Form = () => {
               onChange={({target}) => setName(target.value)}
               placeholder={'Ваше имя'}
               maxLength={'45'}
-              pattern={'pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"'}
             />
             <input
               type={'number'}

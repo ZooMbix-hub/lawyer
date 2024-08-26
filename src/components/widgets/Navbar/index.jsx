@@ -1,11 +1,14 @@
 import s from './style.module.scss';
+import logo from '../../image/logo.png';
 
 const Navbar = () => {
   return (
     <div className={s.wrapper}>
       <div className={s.content}>
         <p className={s.logo}>
-          <a href="#header">{'Вагапов'}</a>
+          <a href="#header">
+            <img src={logo} className={s.navLogo} />
+          </a>
         </p>
         <div className={s.info}>
           <ul className={s.navbar}>

@@ -21,7 +21,7 @@ const AmenitiesItem = ({title, descriptions, iconName}) => {
           }
         </ul>
       </div>
-      <a href="#contacts"><button className={s.ticketBtn}>{'Оставить заявку'}</button></a>
+      <a href="#form"><button className={s.ticketBtn}>{'Оставить заявку'}</button></a>
     </div>
   );
 };
